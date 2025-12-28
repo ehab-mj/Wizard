@@ -65,7 +65,7 @@ class FireWizard extends Wizard {
 
         opponent.receiveDamage(damage)
 
-        console.log(`${this.name} cast Fire spell on ${opponent.name} for ${damage} damage cost 20 mana`);
+        console.log(`${this.name} cast Fire spell on ${opponent.name} for ${damage} hit mana cost -20`);
     }
 }
 
@@ -88,7 +88,7 @@ class IceWizard extends Wizard {
         opponent.receiveDamage(damage)
         opponent.spendMana(extraMana)
 
-        console.log(`${this.name} cast Ice spell on ${opponent.name} for ${damage} damage cost 10 mana`);
+        console.log(`${this.name} cast Ice spell on ${opponent.name} for ${damage} hit mana cost -10`);
     }
 }
 
